@@ -45,9 +45,9 @@ elif month is "September" or "september" or "October" or "october" or "November"
     season="fall"
 else:
     print ("I don't quite understand what you said")
-if year is i in range (1980, 1989):
+if year is "1980" or "1981" or "1982" or "1983" or "1984" or "1985" or "1986" or "1987" or "1988" or "1989":
     timeperiod="eighties"
-elif year is i in range (1990, 1999):
+elif int(year) is i in range (1990, 1999):
     timperiod="nineties"
 
 
