@@ -1,6 +1,6 @@
 """
 birthday.py
-Author: <your name here>
+Author: Anoushka Alavilli
 Credit: <list sources used, if any>
 Assignment:
 
@@ -35,6 +35,6 @@ name= input("Hello, what is your name?")
 month= input("Hi {0}, what was the name of the month you were born in?".format(name))
 year= input("And what year were you born in, {0}?".format(name))
 day= input("And the day?")
-if month= input"december" or "December" or "january" or "January" or "february" or "February"
-    then season=winter
+if input(month)= input"december" or "December" or "january" or "January" or "february" or "February":
+    then season="winter"
 print ("{0}, you are a...".format(name))
