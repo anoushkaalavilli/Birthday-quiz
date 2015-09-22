@@ -44,5 +44,16 @@ elif month is "June" or "june" or "July" or "july" or "August" or "august":
 elif month is "September" or "september" or "October" or "october" or "November" or "november":
     season="fall"
 else:
-    print "I don't quite understand what you said"
+    print ("I don't quite understand what you said")
+if year is i in range (1980, 1989):
+    timeperiod="eighties"
+elif year is i in range (1990, 1999):
+    timperiod="nineties"
+
+
+
+
+
+
+
 print ("{0}, you are a...".format(name))
