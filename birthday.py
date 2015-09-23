@@ -41,25 +41,25 @@ name= input("Hello, what is your name?")
 month= input("Hi {0}, what was the name of the month you were born in?".format(name))
 year= input("And what year were you born in, {0}?".format(name))
 day= input("And the day?")
-if month is "december" or "December" or "january" or "January" or "february" or "February":
+if month== "december" or "December" or "january" or "January" or "february" or "February":
     season="winter"
-elif month is "March" or "march" or "April" or "april" or "May" or "may":
+elif month== "March" or "march" or "April" or "april" or "May" or "may":
     season="spring"
-elif month is "June" or "june" or "July" or "july" or "August" or "august":
+elif month== "June" or "june" or "July" or "july" or "August" or "august":
     season="summer"
-elif month is "September" or "september" or "October" or "october" or "November" or "november":
+elif month== "September" or "september" or "October" or "october" or "November" or "november":
     season="fall"
 else:
     print ("I don't quite understand what you said")
-if todaymonth==month and todaydate==day:
+if tmonth==month and tday==day:
     print ("Happy birthday!")
 elif month=="October" or "october" and day=="31":
     print ("You were born on Halloween!")
-elif year is "1980" or "1981" or "1982" or "1983" or "1984" or "1985" or "1986" or "1987" or "1988" or "1989":
+elif year=="1980" or "1981" or "1982" or "1983" or "1984" or "1985" or "1986" or "1987" or "1988" or "1989":
     timeperiod="eighties"
-elif year is "1990" or "1991" or "1992" or "1993" or "1994" or "1995" or "1996" or "1997" or "1998" or "1999":
+elif year== "1990" or "1991" or "1992" or "1993" or "1994" or "1995" or "1996" or "1997" or "1998" or "1999":
     timperiod="nineties"
-elif year is "2000" or "2001" or "2002" or "2003" or "2004" or "2005" or "2006" or "2007" or "2008" or "2009" or "2010" or "2011" or "2012" or "2013" or "2014" or "2015":
+elif year== "2000" or "2001" or "2002" or "2003" or "2004" or "2005" or "2006" or "2007" or "2008" or "2009" or "2010" or "2011" or "2012" or "2013" or "2014" or "2015":
     timperiod="two thousands"
 else:
     timeperiod="stone age"
@@ -70,4 +70,4 @@ else:
 
 
 
-print ("{0}, you are a...".format(name))
+print ("{0}, you are a {1} baby of the {2}".format(name, season, timeperiod))
