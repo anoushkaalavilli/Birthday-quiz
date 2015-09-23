@@ -41,13 +41,13 @@ name= input("Hello, what is your name?")
 month= input("Hi {0}, what was the name of the month you were born in?".format(name))
 year= input("And what year were you born in, {0}?".format(name))
 day= input("And the day?")
-if month== "december" or "December" or "january" or "January" or "february" or "February":
+if month== "december" or month== "December" or month== "january" or month== "January" or month== "february" or month== "February":
     season="winter"
-elif month== "March" or "march" or "April" or "april" or "May" or "may":
+elif month== "March" or month== "march" or month== "April" or month== "april" or month== "May" or month== "may":
     season="spring"
-elif month== "June" or "june" or "July" or "july" or "August" or "august":
+elif month== "June" or month== "june" or month== "July" or month== "july" or month== "August" or month== "august":
     season="summer"
-elif month== "September" or "september" or "October" or "october" or "November" or "november":
+elif month== "September" or month== "september" or month== "October" or month== "october" or month== "November" or month== "november":
     season="fall"
 else:
     print ("I don't quite understand what you said")
