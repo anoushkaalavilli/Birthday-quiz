@@ -1,7 +1,7 @@
 """
 birthday.py
 Author: Anoushka Alavilli
-Credit: <list sources used, if any>
+Credit: Sarah Dunbar, Jasmine Lou
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -34,13 +34,17 @@ Example Session
 from datetime import datetime
 from calendar import month_name
 todaymonth = datetime.today().month
-todaydate = datetime.today().day
-tmonth= str(todaymonth)
-tday= str(todaydate)
+todaydate = str(datetime.today().day)
+tmonth= month_name[todaymonth]
+
 name= input("Hello, what is your name?")
 month= input("Hi {0}, what was the name of the month you were born in?".format(name))
 year= input("And what year were you born in, {0}?".format(name))
 day= input("And the day?")
+if tmonth==month and todaydate==day:
+    print ("Happy birthday!")
+elif month=="October" or "october" and day=="31":
+    print ("You were born on Halloween!")
 if month== "december" or month== "December" or month== "january" or month== "January" or month== "february" or month== "February":
     season="winter"
 elif month== "March" or month== "march" or month== "April" or month== "april" or month== "May" or month== "may":
@@ -51,16 +55,12 @@ elif month== "September" or month== "september" or month== "October" or month== 
     season="fall"
 else:
     print ("I don't quite understand what you said")
-if tmonth==month and tday==day:
-    print ("Happy birthday!")
-elif month=="October" or "october" and day=="31":
-    print ("You were born on Halloween!")
-elif year== "1980" or year== "1981" or year== "1982" or year== "1983" or year== "1984" or year== "1985" or year== "1986" or year== "1987" or year== "1988" or year== "1989":
+if year== "1980" or year== "1981" or year== "1982" or year== "1983" or year== "1984" or year== "1985" or year== "1986" or year== "1987" or year== "1988" or year== "1989":
     timeperiod="eighties"
 elif year== "1990" or year== "1991" or year== "1992" or year== "1993" or year== "1994" or year== "1995" or year== "1996" or year== "1997" or year== "1998" or year== "1999":
-    timperiod="nineties"
+    timeperiod="nineties"
 elif year== "2000" or year== "2001" or year== "2002" or year== "2003" or year== "2004" or year== "2005" or year== "2006" or year== "2007" or year== "2008" or year== "2009" or year== "2010" or year== "2011" or year== "2012" or year== "2013" or year== "2014" or year== "2015":
-    timperiod="two thousands"
+    timeperiod="two thousands"
 else:
     timeperiod="stone age"
-print ("{0}, you are a {1} baby of the {2}".format(name, season, timeperiod))
+print (str(name) + ", you are a " + str(season) + " baby of the " + timeperiod)
