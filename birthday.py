@@ -1,7 +1,7 @@
 """
 birthday.py
 Author: Anoushka Alavilli
-Credit: Sarah Dunbar, Jasmine Lou
+Credit: Sarah Dunbar, Jasmine Lou, Mr. Dennison
 Assignment:
 
 Your program will ask the user the following questions, in this order:
