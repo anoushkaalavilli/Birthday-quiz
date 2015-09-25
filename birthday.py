@@ -43,15 +43,16 @@ year= input("And what year were you born in, {0}?".format(name))
 day= input("And the day?")
 if tmonth==month and todaydate==day:
     print ("Happy birthday!")
-elif month=="October" or "october" and day=="31":
+elif month=="October" and day=="31":
     print ("You were born on Halloween!")
-if month== "december" or month== "December" or month== "january" or month== "January" or month== "february" or month== "February":
+    break
+elif month== "December" or month== "January"  or month== "February":
     season="winter"
-elif month== "March" or month== "march" or month== "April" or month== "april" or month== "May" or month== "may":
+elif month== "March" or month== "April" or month== "May":
     season="spring"
-elif month== "June" or month== "june" or month== "July" or month== "july" or month== "August" or month== "august":
+elif month== "June" or month== "July" or month== "August":
     season="summer"
-elif month== "September" or month== "september" or month== "October" or month== "october" or month== "November" or month== "november":
+elif month== "September" or month== "October" or month== "November":
     season="fall"
 else:
     print ("I don't quite understand what you said")
