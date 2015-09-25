@@ -37,29 +37,31 @@ todaymonth = datetime.today().month
 todaydate = str(datetime.today().day)
 tmonth= month_name[todaymonth]
 
-name= input("Hello, what is your name?")
-month= input("Hi {0}, what was the name of the month you were born in?".format(name))
-year= input("And what year were you born in, {0}?".format(name))
-day= input("And the day?")
+name= input("Hello, what is your name? ")
+month= input("Hi {0}, what was the name of the month you were born in? ".format(name))
+year= input("And what year were you born in, {0}? ".format(name))
+day= input("And the day? ")
+yearint=int(year)
 if tmonth==month and todaydate==day:
     print ("Happy birthday!")
+    
 elif month=="October" and day=="31":
     print ("You were born on Halloween!")
 else:
-    month== "December" or month== "January"  or month== "February":
-    season="winter"
-        if month== "March" or month== "April" or month== "May":
-            season="spring"
-        if month== "June" or month== "July" or month== "August":
-            season="summer"
-        if month== "September" or month== "October" or month== "November":
-            season="fall"
-        if year== "1980" or year== "1981" or year== "1982" or year== "1983" or year== "1984" or year== "1985" or year== "1986" or year== "1987" or year== "1988" or year== "1989":
-            timeperiod="eighties"
-        if year== "1990" or year== "1991" or year== "1992" or year== "1993" or year== "1994" or year== "1995" or year== "1996" or year== "1997" or year== "1998" or year== "1999":
-            timeperiod="nineties"
-        if year== "2000" or year== "2001" or year== "2002" or year== "2003" or year== "2004" or year== "2005" or year== "2006" or year== "2007" or year== "2008" or year== "2009" or year== "2010" or year== "2011" or year== "2012" or year== "2013" or year== "2014" or year== "2015":
-            timeperiod="two thousands"
-        if:
-            timeperiod="stone age"
-print (str(name) + ", you are a " + str(season) + " baby of the " + timeperiod)
+    if month== "December" or month== "January" or month== "February":
+        season="winter"
+    if month== "March" or month== "April" or month== "May":
+        season="spring"
+    if month== "June" or month== "July" or month== "August":
+        season="summer"
+    if month== "September" or month== "October" or month== "November":
+        season="fall"
+    if (yearint)>= 1980 and yearint<=1989:
+        timeperiod="eighties"
+    if (yearint)>= 1990 and yearint<=1999:
+        timeperiod="nineties"
+    if (yearint)>= 2000 and yearint<=2015:
+        timeperiod="two thousands"
+    if (yearint)<=1979:
+        timeperiod="stone age"
+    print (str(name) + ", you are a " + str(season) + " baby of the " + timeperiod)
