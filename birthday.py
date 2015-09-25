@@ -45,7 +45,6 @@ if tmonth==month and todaydate==day:
     print ("Happy birthday!")
 elif month=="October" and day=="31":
     print ("You were born on Halloween!")
-    break
 elif month== "December" or month== "January"  or month== "February":
     season="winter"
 elif month== "March" or month== "April" or month== "May":
@@ -55,7 +54,7 @@ elif month== "June" or month== "July" or month== "August":
 elif month== "September" or month== "October" or month== "November":
     season="fall"
 else:
-    print ("I don't quite understand what you said")
+    print ("I don't quite understand what you said. Remember to capitalize the month.")
 if year== "1980" or year== "1981" or year== "1982" or year== "1983" or year== "1984" or year== "1985" or year== "1986" or year== "1987" or year== "1988" or year== "1989":
     timeperiod="eighties"
 elif year== "1990" or year== "1991" or year== "1992" or year== "1993" or year== "1994" or year== "1995" or year== "1996" or year== "1997" or year== "1998" or year== "1999":
