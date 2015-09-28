@@ -64,4 +64,4 @@ else:
         timeperiod="two thousands"
     if (yearint)<=1979:
         timeperiod="stone age"
-    print (str(name) + ", you are a " + str(season) + " baby of the " + timeperiod)
+    print (str(name) + ", you are a " + str(season) + " baby of the " + timeperiod + ".")
